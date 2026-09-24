@@ -1,0 +1,2642 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="deleFOCO Producción — Producción audiovisual, talento técnico, servicios y soluciones para proyectos audiovisuales."
+    >
+
+    <title>deleFOCO — Producción</title>
+
+    <meta name="theme-color" content="#111111">
+
+    <!-- Favicon embebido -->
+    <link
+        rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111111'/%3E%3Ccircle cx='32' cy='32' r='13' fill='%23e60000'/%3E%3C/svg%3E"
+    >
+
+    <!-- Imágenes y video se cargan desde delefoco.com -->
+    <link rel="preconnect" href="https://delefoco.com">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <noscript>
+        <style>
+            .reveal,
+            .reveal-item {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body class="business-mode dark-theme">
+
+    <!-- =====================================================
+         HEADER / NAVBAR
+    ====================================================== -->
+
+    <header id="navbar">
+
+        <div class="container nav-container">
+
+            <a
+                href="#inicio"
+                class="logo"
+                aria-label="deleFOCO Inicio"
+                data-i18n-aria-label="logoLabel"
+            >
+                <img src="logo_sin_fondo.png" alt="deleFOCO" class="brand-logo" decoding="async" data-fb="img/logo_sin_fondo.png|img/logo.png|https://delefoco.com/uploads/web/logo-delefoco.png" onerror="var f=(this.dataset.fb||'').split('|');var n=f.shift();this.dataset.fb=f.join('|');if(n){this.src=n}else{this.onerror=null}">
+            </a>
+
+
+            <button
+                id="menuToggle"
+                class="menu-toggle"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="navMenu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+
+            <nav
+                id="navMenu"
+                class="nav-menu"
+                aria-label="Navegación principal"
+                data-i18n-aria-label="navLabel"
+            >
+
+                <a href="#servicios" data-i18n="navServices">
+                    Servicios
+                </a>
+
+                <a href="#proceso" data-i18n="navProcess">
+                    Proceso
+                </a>
+
+                <a href="#locaciones" data-i18n="navLocations">
+                    Locaciones
+                </a>
+
+                <a href="#oportunidades" data-i18n="navOpportunities">
+                    Oportunidades
+                </a>
+
+                <a href="#referencias" data-i18n="navReferences">
+                    Referencias
+                </a>
+
+                <a href="#contacto" data-i18n="navContact">
+                    Contacto
+                </a>
+
+
+                <!-- AUDIENCIA (versión para pantallas chicas) -->
+
+                <div
+                    class="nav-audience-mobile"
+                    role="group"
+                    aria-label="Tipo de visitante"
+                    data-i18n-aria-label="audienceLabel"
+                >
+
+                    <button
+                        class="audience-btn active"
+                        type="button"
+                        data-audience="business"
+                        aria-pressed="true"
+                    >
+                        <span class="audience-btn-icon">◼</span>
+                        <span
+                            class="audience-btn-text"
+                            data-i18n="business"
+                        >
+                            CONTRATAR SERVICIOS
+                        </span>
+                    </button>
+
+                    <button
+                        class="audience-btn"
+                        type="button"
+                        data-audience="professional"
+                        aria-pressed="false"
+                    >
+                        <span class="audience-btn-icon">◆</span>
+                        <span
+                            class="audience-btn-text"
+                            data-i18n="professional"
+                        >
+                            QUIERO SER PARTE
+                        </span>
+                    </button>
+
+                </div>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <!-- AUDIENCIA -->
+
+                <div
+                    class="audience-selector"
+                    role="group"
+                    aria-label="Tipo de visitante"
+                    data-i18n-aria-label="audienceLabel"
+                >
+
+                    <button
+                        id="businessBtn"
+                        class="audience-btn active"
+                        type="button"
+                        data-audience="business"
+                        aria-pressed="true"
+                    >
+                        <span class="audience-btn-icon">◼</span>
+                        <span
+                            class="audience-btn-text"
+                            data-i18n="business"
+                        >
+                            CONTRATAR SERVICIOS
+                        </span>
+                    </button>
+
+
+                    <button
+                        id="professionalBtn"
+                        class="audience-btn"
+                        type="button"
+                        data-audience="professional"
+                        aria-pressed="false"
+                    >
+                        <span class="audience-btn-icon">◆</span>
+                        <span
+                            class="audience-btn-text"
+                            data-i18n="professional"
+                        >
+                            QUIERO SER PARTE
+                        </span>
+                    </button>
+
+                </div>
+
+
+                <!-- IDIOMA -->
+
+                <button
+                    id="languageToggle"
+                    class="nav-control"
+                    type="button"
+                    aria-label="Cambiar idioma"
+                    data-i18n-aria-label="changeLanguage"
+                >
+                    EN
+                </button>
+
+
+                <!-- TEMA -->
+
+                <button
+                    id="themeToggle"
+                    class="nav-control theme-control"
+                    type="button"
+                    aria-label="Modo oscuro"
+                >
+                    <span id="themeIcon">☾</span>
+                    <span id="themeText" data-i18n="darkMode">
+                        Modo oscuro
+                    </span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =================================================
+             HERO (Con 4 slides, fundido suave y automático)
+        ================================================== -->
+
+        <section
+            id="inicio"
+            class="hero"
+        >
+
+            <div class="hero-carousel">
+
+                <!-- SLIDE 1 -->
+                <article class="hero-slide active" data-slide="0">
+                    <div class="hero-background" style="--hero-img: url('https://delefoco.com/Uploads/Noticias/613_67458.jpg');"></div>
+                    <div class="container hero-content">
+                        <span class="eyebrow" data-i18n="heroEyebrowBusiness">deleFOCO / PRODUCCIÓN</span>
+                        <h1 id="heroTitle">
+                            <span data-i18n="businessHeroTitle">¿Contratar servicios?</span>
+                        </h1>
+                        <p id="heroDescription">
+                            <span data-i18n="businessHeroText">Producción audiovisual de principio a fin.</span>
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#cotizacion" class="btn btn-primary magnetic" data-action="business-quote" data-i18n="businessHeroButton">Solicitar cotización</a>
+                            <a href="#servicios" class="btn btn-secondary" data-i18n="businessHeroSecondary">Ver servicios</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- SLIDE 2 -->
+                <article class="hero-slide" data-slide="1">
+                    <div class="hero-background" style="--hero-img: url('https://delefoco.com/Uploads/Noticias/611_67376.jpg');"></div>
+                    <div class="container hero-content">
+                        <span class="eyebrow" data-i18n="heroEyebrowProfessional">DELEFOCO / TALENTO</span>
+                        <h1>
+                            <span data-i18n="professionalHeroTitle">¿Quiero ser parte?</span>
+                        </h1>
+                        <p>
+                            <span data-i18n="professionalHeroText">Oportunidades, formación y comunidad audiovisual.</span>
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#participacion" class="btn btn-primary magnetic" data-action="professional-opportunities" data-i18n="professionalHeroButton">Quiero participar</a>
+                            <a href="#oportunidades" class="btn btn-secondary" data-i18n="professionalHeroSecondary">Conocer oportunidades</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="hero-controls">
+                <div class="hero-dots">
+                    <button class="hero-dot active" type="button" data-slide="0" aria-label="Ir al slide 1"></button>
+                    <button class="hero-dot" type="button" data-slide="1" aria-label="Ir al slide 2"></button>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             INTRODUCCIÓN
+        ================================================== -->
+
+        <section class="intro-section reveal">
+
+            <div class="container intro-grid">
+
+                <div>
+
+                    <span class="section-label">
+                        DELEFOCO / PRODUCTION
+                    </span>
+
+                    <h2>
+                        <span data-i18n="introTitleStart">
+                            Convertimos ideas en
+                        </span>
+                        <span class="accent-text" data-i18n="introTitleAccent">
+                            producciones reales.
+                        </span>
+                    </h2>
+
+                </div>
+
+
+                <div>
+
+                    <p data-i18n="introText1">
+                        Una producción audiovisual necesita más que una buena idea.
+                        Necesita planificación, personas, recursos, coordinación
+                        y una ejecución precisa.
+                    </p>
+
+                    <p data-i18n="introText2">
+                        deleFOCO conecta cada una de esas piezas para que el proyecto
+                        avance desde el concepto hasta la entrega final.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PROCESO
+        ================================================== -->
+
+        <section
+            id="proceso"
+            class="process-section"
+        >
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-label">
+                        WORKFLOW
+                    </span>
+
+                    <h2 data-i18n="processTitle">
+                        Un pipeline pensado para producir mejor
+                    </h2>
+
+                    <p data-i18n="processSubtitle">
+                        Desde la primera idea hasta la entrega final.
+                    </p>
+
+                </div>
+
+
+                <div class="pipeline">
+
+                    <div
+                        id="pipelineLine"
+                        class="pipeline-line"
+                    ></div>
+
+
+                    <article class="pipeline-item reveal-item">
+
+                        <div class="pipeline-number">
+                            01
+                        </div>
+
+                        <div class="pipeline-icon">
+                            💡
+                        </div>
+
+                        <h3 data-i18n="idea">
+                            IDEA
+                        </h3>
+
+                        <p data-i18n="ideaText">
+                            Definimos el objetivo, concepto y necesidades
+                            principales del proyecto.
+                        </p>
+
+                    </article>
+
+
+                    <article class="pipeline-item reveal-item">
+
+                        <div class="pipeline-number">
+                            02
+                        </div>
+
+                        <div class="pipeline-icon">
+                            📋
+                        </div>
+
+                        <h3 data-i18n="preProduction">
+                            PRE-PRODUCTION
+                        </h3>
+
+                        <p data-i18n="preProductionText">
+                            Organizamos equipo, presupuesto, locaciones,
+                            calendario y recursos.
+                        </p>
+
+                    </article>
+
+
+                    <article class="pipeline-item reveal-item">
+
+                        <div class="pipeline-number">
+                            03
+                        </div>
+
+                        <div class="pipeline-icon">
+                            🎥
+                        </div>
+
+                        <h3 data-i18n="production">
+                            PRODUCTION
+                        </h3>
+
+                        <p data-i18n="productionText">
+                            Ejecutamos el rodaje coordinando talento,
+                            equipo y logística.
+                        </p>
+
+                    </article>
+
+
+                    <article class="pipeline-item reveal-item">
+
+                        <div class="pipeline-number">
+                            04
+                        </div>
+
+                        <div class="pipeline-icon">
+                            ✂
+                        </div>
+
+                        <h3 data-i18n="post">
+                            POST
+                        </h3>
+
+                        <p data-i18n="postText">
+                            Edición, color, sonido, motion graphics
+                            y acabados finales.
+                        </p>
+
+                    </article>
+
+
+                    <article class="pipeline-item reveal-item">
+
+                        <div class="pipeline-number">
+                            05
+                        </div>
+
+                        <div class="pipeline-icon">
+                            ✓
+                        </div>
+
+                        <h3 data-i18n="delivery">
+                            DELIVERY
+                        </h3>
+
+                        <p data-i18n="deliveryText">
+                            Entregamos las piezas finales listas para
+                            su distribución.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SERVICIOS
+        ================================================== -->
+
+        <section
+            id="servicios"
+            class="services-section"
+        >
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-label">
+                        SERVICES
+                    </span>
+
+                    <h2
+                        id="servicesTitle"
+                        data-i18n="servicesTitle"
+                    >
+                        Producción de principio a fin
+                    </h2>
+
+                    <p
+                        id="servicesDescription"
+                        data-i18n="servicesSubtitle"
+                    >
+                        Un equipo conectado para resolver cada etapa
+                        de un proyecto audiovisual.
+                    </p>
+
+                </div>
+
+
+                <div
+                    id="servicesGrid"
+                    class="services-grid"
+                >
+
+                    <article class="service-card interactive-card reveal">
+
+                        <div class="service-icon">
+                            01
+                        </div>
+
+                        <h3 data-i18n="executiveProduction">
+                            Producción ejecutiva
+                        </h3>
+
+                        <p data-i18n="executiveProductionText">
+                            Planificación, coordinación y supervisión
+                            general del proyecto.
+                        </p>
+
+                        <span class="service-arrow">
+                            →
+                        </span>
+
+                    </article>
+
+
+                    <article class="service-card interactive-card reveal">
+
+                        <div class="service-icon">
+                            02
+                        </div>
+
+                        <h3 data-i18n="lineProduction">
+                            Línea de producción
+                        </h3>
+
+                        <p data-i18n="lineProductionText">
+                            Presupuesto, cronograma, proveedores,
+                            permisos y logística.
+                        </p>
+
+                        <span class="service-arrow">
+                            →
+                        </span>
+
+                    </article>
+
+
+                    <article class="service-card interactive-card reveal">
+
+                        <div class="service-icon">
+                            03
+                        </div>
+
+                        <h3 data-i18n="technicalCrew">
+                            Crew técnico
+                        </h3>
+
+                        <p data-i18n="technicalCrewText">
+                            Profesionales especializados para cada
+                            necesidad de producción.
+                        </p>
+
+                        <span class="service-arrow">
+                            →
+                        </span>
+
+                    </article>
+
+
+                    <article class="service-card interactive-card reveal">
+
+                        <div class="service-icon">
+                            04
+                        </div>
+
+                        <h3 data-i18n="gear">
+                            Equipo y gear
+                        </h3>
+
+                        <p data-i18n="gearText">
+                            Soluciones técnicas para cámara,
+                            iluminación, sonido y producción.
+                        </p>
+
+                        <span class="service-arrow">
+                            →
+                        </span>
+
+                    </article>
+
+
+                    <article class="service-card interactive-card reveal">
+
+                        <div class="service-icon">
+                            05
+                        </div>
+
+                        <h3 data-i18n="postProduction">
+                            Postproducción
+                        </h3>
+
+                        <p data-i18n="postProductionText">
+                            Edición, color, sonido, motion graphics
+                            y entrega final.
+                        </p>
+
+                        <span class="service-arrow">
+                            →
+                        </span>
+
+                    </article>
+
+
+                    <article class="service-card interactive-card reveal">
+
+                        <div class="service-icon">
+                            06
+                        </div>
+
+                        <h3 data-i18n="permitsLogistics">
+                            Permisos y logística
+                        </h3>
+
+                        <p data-i18n="permitsLogisticsText">
+                            Coordinación operativa para que el rodaje
+                            avance sin fricciones.
+                        </p>
+
+                        <span class="service-arrow">
+                            →
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             AI BRIEF HELPER
+        ================================================== -->
+
+        <section
+            id="ai-brief"
+            class="ai-section"
+        >
+
+            <div class="container">
+
+                <div class="ai-layout">
+
+                    <div class="ai-intro reveal">
+
+                        <span class="section-label">
+                            AI / PRODUCTION
+                        </span>
+
+                        <h2 data-i18n="aiTitle">
+                            AI Brief Helper
+                        </h2>
+
+                        <p data-i18n="aiSubtitle">
+                            Convertí una idea inicial en una guía rápida
+                            de producción.
+                        </p>
+
+                    </div>
+
+
+                    <div class="ai-card reveal">
+
+                        <label
+                            for="briefInput"
+                            class="sr-only"
+                            data-i18n="brief"
+                        >
+                            Brief
+                        </label>
+
+                        <textarea
+                            id="briefInput"
+                            name="brief"
+                            rows="7"
+                            data-i18n-placeholder="aiPlaceholder"
+                            placeholder="Escribí tu idea, por ejemplo: necesitamos grabar un comercial para redes sociales..."
+                        ></textarea>
+
+
+                        <div class="ai-actions">
+
+                            <button
+                                id="analyzeBrief"
+                                class="btn btn-primary"
+                                type="button"
+                                data-i18n="analyze"
+                            >
+                                Analizar brief
+                            </button>
+
+                        </div>
+
+
+                        <div
+                            id="aiResult"
+                            class="ai-result"
+                            aria-live="polite"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PRODUCTION PULSE
+        ================================================== -->
+
+        <section class="pulse-section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-label">
+                        DATA / INSIGHT
+                    </span>
+
+                    <h2 data-i18n="pulseTitle">
+                        Production Pulse
+                    </h2>
+
+                    <p data-i18n="pulseSubtitle">
+                        Una lectura rápida de las necesidades detectadas
+                        en tu brief.
+                    </p>
+
+                </div>
+
+
+                <div
+                    id="productionPulse"
+                    class="production-pulse"
+                    aria-live="polite"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+            <!-- =================================================
+             LOCACIONES
+             (basada en https://delefoco.com/locaciones)
+             Para agregar una: copia un bloque <a class="location-card">
+             y cambia href, src, alt y el <h3>.
+        ================================================== -->
+
+        <section
+            id="locaciones"
+            class="locations-section"
+        >
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-label">
+                        LOCATIONS
+                    </span>
+
+                    <h2 data-i18n="locationsTitle">
+                        Locaciones para tu producción
+                    </h2>
+
+                    <p data-i18n="locationsSubtitle">
+                        Casas, playas y paisajes de Costa Rica listos para tu próximo rodaje.
+                    </p>
+
+                </div>
+
+
+                <div class="locations-grid reveal">
+
+                    <!-- Casa antigua de madera en San José -->
+                    <a
+                        class="location-card"
+                        href="https://delefoco.com/?action=p&amp;id=13450"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <div class="location-image">
+                            <img
+                                src="https://delefoco.com/Uploads/Productos/13450_22757-med.jpeg"
+                                alt="Casa antigua de madera en San José"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+
+                        <div class="location-info">
+                            <h3>Casa antigua de madera en San José</h3>
+                        </div>
+                    </a>
+
+                    <!-- Playas de Guanacaste, Costa Rica -->
+                    <a
+                        class="location-card"
+                        href="https://delefoco.com/?action=p&amp;id=13451"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <div class="location-image">
+                            <img
+                                src="https://delefoco.com/Uploads/Productos/13451_22792-med.jpg"
+                                alt="Playas de Guanacaste, Costa Rica"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+
+                        <div class="location-info">
+                            <h3>Playas de Guanacaste, Costa Rica</h3>
+                        </div>
+                    </a>
+
+                    <!-- Tierra Fértil -->
+                    <a
+                        class="location-card"
+                        href="https://delefoco.com/?action=p&amp;id=13452"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <div class="location-image">
+                            <img
+                                src="https://delefoco.com/Uploads/Productos/13452_66430-med.jpeg"
+                                alt="Tierra Fértil"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+
+                        <div class="location-info">
+                            <h3>Tierra Fértil</h3>
+                        </div>
+                    </a>
+
+                    <!-- Caño Negro Wetlands -->
+                    <a
+                        class="location-card"
+                        href="https://delefoco.com/?action=p&amp;id=13453"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <div class="location-image">
+                            <img
+                                src="https://delefoco.com/Uploads/Productos/13453_22803-med.jpeg"
+                                alt="Caño Negro Wetlands"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+
+                        <div class="location-info">
+                            <h3>Caño Negro Wetlands</h3>
+                        </div>
+                    </a>
+
+                    <!-- Propiedad con amplias zonas verdes -->
+                    <a
+                        class="location-card"
+                        href="https://delefoco.com/?action=p&amp;id=13454"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <div class="location-image">
+                            <img
+                                src="https://delefoco.com/Uploads/Productos/13454_22807-med.jpeg"
+                                alt="Propiedad con amplias zonas verdes"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+
+                        <div class="location-info">
+                            <h3>Propiedad con amplias zonas verdes</h3>
+                        </div>
+                    </a>
+
+                    <!-- Casa de Nini -->
+                    <a
+                        class="location-card"
+                        href="https://delefoco.com/?action=p&amp;id=13455"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <div class="location-image">
+                            <img
+                                src="https://delefoco.com/Uploads/Productos/13455_22821-med.jpeg"
+                                alt="Casa de Nini"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+
+                        <div class="location-info">
+                            <h3>Casa de Nini</h3>
+                        </div>
+                    </a>
+
+                    <!-- Casa en Moravia Los Colegios -->
+                    <a
+                        class="location-card"
+                        href="https://delefoco.com/?action=p&amp;id=13457"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <div class="location-image">
+                            <img
+                                src="https://delefoco.com/Uploads/Productos/13457_22833-med.jpeg"
+                                alt="Casa en Moravia Los Colegios"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+
+                        <div class="location-info">
+                            <h3>Casa en Moravia Los Colegios</h3>
+                        </div>
+                    </a>
+
+                    <!-- Casa Nueva -->
+                    <a
+                        class="location-card"
+                        href="https://delefoco.com/?action=p&amp;id=13458"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <div class="location-image">
+                            <img
+                                src="https://delefoco.com/Uploads/Productos/13458_22845-med.jpeg"
+                                alt="Casa Nueva"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+
+                        <div class="location-info">
+                            <h3>Casa Nueva</h3>
+                        </div>
+                    </a>
+
+                    <!-- Casa en Lourdes -->
+                    <a
+                        class="location-card"
+                        href="https://delefoco.com/?action=p&amp;id=13460"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <div class="location-image">
+                            <img
+                                src="https://delefoco.com/Uploads/Productos/13460_22857-med.jpeg"
+                                alt="Casa en Lourdes"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+
+                        <div class="location-info">
+                            <h3>Casa en Lourdes</h3>
+                        </div>
+                    </a>
+
+                    <!-- Casa Siglo IX -->
+                    <a
+                        class="location-card"
+                        href="https://delefoco.com/?action=p&amp;id=13461"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <div class="location-image">
+                            <img
+                                src="https://delefoco.com/Uploads/Productos/13461_22863-med.jpeg"
+                                alt="Casa Siglo IX"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+
+                        <div class="location-info">
+                            <h3>Casa Siglo IX</h3>
+                        </div>
+                    </a>
+
+                    <!-- Casa de Eche -->
+                    <a
+                        class="location-card"
+                        href="https://delefoco.com/?action=p&amp;id=13463"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <div class="location-image">
+                            <img
+                                src="https://delefoco.com/Uploads/Productos/13463_22879-med.jpeg"
+                                alt="Casa de Eche"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+
+                        <div class="location-info">
+                            <h3>Casa de Eche</h3>
+                        </div>
+                    </a>
+
+                    <!-- Casa moderna en San José -->
+                    <a
+                        class="location-card"
+                        href="https://delefoco.com/?action=p&amp;id=13882"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <div class="location-image">
+                            <img
+                                src="https://delefoco.com/Uploads/Productos/13882_63300-med.jpeg"
+                                alt="Casa moderna en San José"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+
+                        <div class="location-info">
+                            <h3>Casa moderna en San José</h3>
+                        </div>
+                    </a>
+
+                </div>
+
+
+                <div class="locations-more">
+                    <a
+                        href="https://delefoco.com/locaciones"
+                        class="btn btn-primary"
+                        target="_blank"
+                        rel="noopener"
+                        data-i18n="locationsMore"
+                    >
+                        Ver todas las locaciones
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             COTIZACIÓN
+        ================================================== -->
+
+        <section
+            id="cotizacion"
+            class="quote-section business-only"
+        >
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-label">
+                        START A PROJECT
+                    </span>
+
+                    <h2 data-i18n="quoteTitle">
+                        Contanos sobre tu producción
+                    </h2>
+
+                    <p data-i18n="quoteSubtitle">
+                        Completá el formulario y prepararemos
+                        una propuesta inicial.
+                    </p>
+
+                </div>
+
+
+                <div class="quote-wrapper">
+
+                    <!-- PROGRESO -->
+
+                    <div class="quote-progress">
+
+                        <div
+                            class="quote-progress-step active"
+                            data-step="1"
+                        >
+                            <span>01</span>
+                            <small data-i18n="company">
+                                Empresa
+                            </small>
+                        </div>
+
+                        <div
+                            class="quote-progress-step"
+                            data-step="2"
+                        >
+                            <span>02</span>
+                            <small data-i18n="projectType">
+                                Tipo de proyecto
+                            </small>
+                        </div>
+
+                        <div
+                            class="quote-progress-step"
+                            data-step="3"
+                        >
+                            <span>03</span>
+                            <small data-i18n="scope">
+                                Alcance
+                            </small>
+                        </div>
+
+                        <div
+                            class="quote-progress-step"
+                            data-step="4"
+                        >
+                            <span>04</span>
+                            <small data-i18n="dates">
+                                Fechas
+                            </small>
+                        </div>
+
+                        <div
+                            class="quote-progress-step"
+                            data-step="5"
+                        >
+                            <span>05</span>
+                            <small data-i18n="brief">
+                                Brief
+                            </small>
+                        </div>
+
+                    </div>
+
+
+                    <!-- FORMULARIO -->
+
+                    <form
+                        id="quoteForm"
+                        class="quote-form"
+                        novalidate
+                    >
+
+                        <!-- PASO 1 -->
+
+                        <section
+                            class="quote-step active"
+                            data-step="1"
+                        >
+
+                            <div class="step-heading">
+
+                                <span>
+                                    01
+                                </span>
+
+                                <h3 data-i18n="company">
+                                    Empresa
+                                </h3>
+
+                            </div>
+
+
+                            <div class="form-grid">
+
+                                <div class="form-field full">
+
+                                    <label for="company" data-i18n="companyLabel">
+                                        Empresa / cliente
+                                    </label>
+
+                                    <input
+                                        id="company"
+                                        name="company"
+                                        type="text"
+                                        required
+                                        autocomplete="organization"
+                                        placeholder="Nombre de la empresa"
+                                        data-i18n-placeholder="companyPlaceholder"
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="wizard-actions">
+
+                                <span></span>
+
+                                <button
+                                    type="button"
+                                    class="btn btn-primary"
+                                    data-next-step="2"
+                                    data-i18n="next"
+                                >
+                                    Continuar
+                                </button>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- PASO 2 -->
+
+                        <section
+                            class="quote-step"
+                            data-step="2"
+                        >
+
+                            <div class="step-heading">
+
+                                <span>
+                                    02
+                                </span>
+
+                                <h3 data-i18n="projectType">
+                                    Tipo de proyecto
+                                </h3>
+
+                            </div>
+
+
+                            <div class="form-grid">
+
+                                <div class="form-field full">
+
+                                    <label for="projectType" data-i18n="projectType">
+                                        Tipo de proyecto
+                                    </label>
+
+                                    <select
+                                        id="projectType"
+                                        name="projectType"
+                                        required
+                                    >
+                                        <option value="" data-i18n="selectOption">
+                                            Seleccioná una opción
+                                        </option>
+
+                                        <option value="Commercial" data-i18n="optCommercial">
+                                            Comercial
+                                        </option>
+
+                                        <option value="Corporate" data-i18n="optCorporate">
+                                            Corporativo
+                                        </option>
+
+                                        <option value="Documentary" data-i18n="optDocumentary">
+                                            Documental
+                                        </option>
+
+                                        <option value="Music Video" data-i18n="optMusicVideo">
+                                            Video musical
+                                        </option>
+
+                                        <option value="Social Media" data-i18n="optSocialMedia">
+                                            Redes sociales
+                                        </option>
+
+                                        <option value="Event" data-i18n="optEvent">
+                                            Evento
+                                        </option>
+
+                                        <option value="Photography" data-i18n="optPhotography">
+                                            Fotografía
+                                        </option>
+
+                                        <option value="Other" data-i18n="optOther">
+                                            Otro
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="wizard-actions">
+
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-back-step="1"
+                                    data-i18n="back"
+                                >
+                                    Atrás
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="btn btn-primary"
+                                    data-next-step="3"
+                                    data-i18n="next"
+                                >
+                                    Continuar
+                                </button>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- PASO 3 -->
+
+                        <section
+                            class="quote-step"
+                            data-step="3"
+                        >
+
+                            <div class="step-heading">
+
+                                <span>
+                                    03
+                                </span>
+
+                                <h3 data-i18n="scope">
+                                    Alcance
+                                </h3>
+
+                            </div>
+
+
+                            <div class="form-grid">
+
+                                <div class="form-field full">
+
+                                    <label for="scope" data-i18n="scopeLabel">
+                                        ¿Qué necesitás producir?
+                                    </label>
+
+                                    <textarea
+                                        id="scope"
+                                        name="scope"
+                                        rows="6"
+                                        required
+                                        placeholder="Contanos brevemente qué necesitás."
+                                        data-i18n-placeholder="scopePlaceholder"
+                                    ></textarea>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="wizard-actions">
+
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-back-step="2"
+                                    data-i18n="back"
+                                >
+                                    Atrás
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="btn btn-primary"
+                                    data-next-step="4"
+                                    data-i18n="next"
+                                >
+                                    Continuar
+                                </button>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- PASO 4 -->
+
+                        <section
+                            class="quote-step"
+                            data-step="4"
+                        >
+
+                            <div class="step-heading">
+
+                                <span>
+                                    04
+                                </span>
+
+                                <h3 data-i18n="dates">
+                                    Fechas
+                                </h3>
+
+                            </div>
+
+
+                            <div class="form-grid two-columns">
+
+                                <div class="form-field">
+
+                                    <label for="dates" data-i18n="datesLabel">
+                                        Fecha estimada de producción
+                                    </label>
+
+                                    <input
+                                        id="dates"
+                                        name="dates"
+                                        type="date"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <div class="form-field">
+
+                                    <label for="budget">
+                                        <span data-i18n="budget">
+                                            Presupuesto
+                                        </span>
+                                    </label>
+
+                                    <select
+                                        id="budget"
+                                        name="budget"
+                                        required
+                                    >
+
+                                        <option value="" data-i18n="selectRange">
+                                            Seleccioná un rango
+                                        </option>
+
+                                        <option value="Under $1,000" data-i18n="budgetUnder">
+                                            Menos de $1,000
+                                        </option>
+
+                                        <option value="$1,000 - $3,000">
+                                            $1,000 - $3,000
+                                        </option>
+
+                                        <option value="$3,000 - $5,000">
+                                            $3,000 - $5,000
+                                        </option>
+
+                                        <option value="$5,000+">
+                                            $5,000+
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="wizard-actions">
+
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-back-step="3"
+                                    data-i18n="back"
+                                >
+                                    Atrás
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="btn btn-primary"
+                                    data-next-step="5"
+                                    data-i18n="next"
+                                >
+                                    Continuar
+                                </button>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- PASO 5 -->
+
+                        <section
+                            class="quote-step"
+                            data-step="5"
+                        >
+
+                            <div class="step-heading">
+
+                                <span>
+                                    05
+                                </span>
+
+                                <h3 data-i18n="brief">
+                                    Brief
+                                </h3>
+
+                            </div>
+
+
+                            <div class="form-grid">
+
+                                <div class="form-field full">
+
+                                    <label for="quoteBrief" data-i18n="quoteBriefLabel">
+                                        Brief del proyecto
+                                    </label>
+
+                                    <textarea
+                                        id="quoteBrief"
+                                        name="brief"
+                                        rows="8"
+                                        required
+                                        placeholder="Agregá toda la información que considerés importante."
+                                        data-i18n-placeholder="quoteBriefPlaceholder"
+                                    ></textarea>
+
+                                </div>
+
+
+                                <div class="form-field full">
+
+                                    <label for="briefFile" data-i18n="fileLabel">
+                                        Archivo de referencia
+                                    </label>
+
+                                    <input
+                                        id="briefFile"
+                                        name="briefFile"
+                                        type="file"
+                                        accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png"
+                                    >
+
+                                    <small id="fileName">
+                                        Opcional
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <p
+                                id="quoteError"
+                                class="form-message error-message"
+                                aria-live="polite"
+                            ></p>
+
+
+                            <div
+                                id="quoteSuccess"
+                                class="form-message success-message"
+                                aria-live="polite"
+                            >
+
+                                <strong data-i18n="successTitle">
+                                    ¡Solicitud recibida!
+                                </strong>
+
+                                <span data-i18n="successText">
+                                    Tu información está lista para ser enviada al equipo de producción.
+                                </span>
+
+                                <small class="form-message-note">
+                                    <span data-i18n="mailFallback">¿No se abrió tu correo? Escribinos a</span>
+                                    <a href="mailto:comunidad@delefoco.com">comunidad@delefoco.com</a>
+                                </small>
+
+                                <small
+                                    id="quoteMailNote"
+                                    class="form-message-note"
+                                    hidden
+                                ></small>
+
+                            </div>
+
+
+                            <div class="wizard-actions">
+
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-back-step="4"
+                                    data-i18n="back"
+                                >
+                                    Atrás
+                                </button>
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary"
+                                    data-i18n="submit"
+                                >
+                                    Solicitar cotización
+                                </button>
+
+                            </div>
+
+                        </section>
+
+                    </form>
+
+
+                    <button
+                        id="resetQuote"
+                        class="reset-quote"
+                        type="button"
+                        data-i18n="resetQuote"
+                    >
+                        Reiniciar formulario
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CUESTIONARIO POR WHATSAPP
+        ================================================== -->
+
+        <section
+            id="cuestionario"
+            class="quote-section whatsapp-section business-only"
+        >
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-label">
+                        QUICK QUESTIONNAIRE
+                    </span>
+
+                    <h2 data-i18n="waTitle">
+                        Cuestionario rápido
+                    </h2>
+
+                    <p data-i18n="waSubtitle">
+                        Respondé estas preguntas y enviá la información
+                        directo por WhatsApp.
+                    </p>
+
+                </div>
+
+
+                <div class="quote-wrapper">
+
+                    <form
+                        id="whatsappForm"
+                        class="quote-form"
+                        novalidate
+                    >
+
+                        <div class="form-grid">
+
+                            <div class="form-field">
+                                <label for="nombre" data-i18n="waName">Nombre</label>
+                                <input
+                                    id="nombre"
+                                    name="nombre"
+                                    type="text"
+                                    required
+                                    autocomplete="name"
+                                    placeholder="Juan Pérez"
+                                    data-i18n-placeholder="waNamePlaceholder"
+                                >
+                            </div>
+
+                            <div class="form-field">
+                                <label for="correo" data-i18n="waEmail">Correo</label>
+                                <input
+                                    id="correo"
+                                    name="correo"
+                                    type="email"
+                                    required
+                                    autocomplete="email"
+                                    placeholder="juan@email.com"
+                                    data-i18n-placeholder="waEmailPlaceholder"
+                                >
+                            </div>
+
+                            <div class="form-field">
+                                <label for="cliente" data-i18n="waClientType">Tipo de cliente</label>
+                                <select id="cliente" name="cliente">
+                                    <option value="" data-i18n="selectOption">Seleccioná una opción</option>
+                                    <option value="Particular" data-i18n="waClientPrivate">Particular</option>
+                                    <option value="Empresa" data-i18n="company">Empresa</option>
+                                </select>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="produccion" data-i18n="waProductionType">Tipo de producción</label>
+                                <select id="produccion" name="produccion">
+                                    <option value="" data-i18n="selectOption">Seleccioná una opción</option>
+                                    <option value="Comercial" data-i18n="optCommercial">Comercial</option>
+                                    <option value="Corporativo" data-i18n="optCorporate">Corporativo</option>
+                                    <option value="Documental" data-i18n="optDocumentary">Documental</option>
+                                    <option value="Video musical" data-i18n="optMusicVideo">Video musical</option>
+                                    <option value="Redes sociales" data-i18n="optSocialMedia">Redes sociales</option>
+                                    <option value="Evento" data-i18n="optEvent">Evento</option>
+                                    <option value="Fotografía" data-i18n="optPhotography">Fotografía</option>
+                                    <option value="Otro" data-i18n="optOther">Otro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="locacion" data-i18n="waLocation">Locación</label>
+                                <input
+                                    id="locacion"
+                                    name="locacion"
+                                    type="text"
+                                    placeholder="San José"
+                                    data-i18n-placeholder="waLocationPlaceholder"
+                                >
+                            </div>
+
+                            <div class="form-field">
+                                <label for="fecha" data-i18n="waDate">Fecha</label>
+                                <input id="fecha" name="fecha" type="date">
+                            </div>
+
+                            <div class="form-field full">
+                                <label for="presupuesto" data-i18n="waBudget">Presupuesto</label>
+                                <input
+                                    id="presupuesto"
+                                    name="presupuesto"
+                                    type="text"
+                                    inputmode="text"
+                                    placeholder="₡500.000"
+                                    data-i18n-placeholder="waBudgetPlaceholder"
+                                >
+                            </div>
+
+                        </div>
+
+                        <p
+                            id="whatsappError"
+                            class="form-message error-message"
+                            aria-live="polite"
+                        ></p>
+
+                        <div class="wizard-actions">
+                            <span></span>
+                            <button
+                                type="submit"
+                                class="btn btn-primary"
+                                data-i18n="waSend"
+                            >
+                                Enviar por WhatsApp
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             TALENTO / OPORTUNIDADES
+        ================================================== -->
+
+        <section
+            id="oportunidades"
+            class="opportunities-section professional-only"
+            aria-hidden="true"
+        >
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-label">
+                        TALENT / COMMUNITY
+                    </span>
+
+                    <h2 data-i18n="opportunitiesTitle">
+                        Oportunidades para profesionales
+                    </h2>
+
+                    <p data-i18n="opportunitiesSubtitle">
+                        Conectamos talento técnico con proyectos,
+                        aprendizaje y nuevas experiencias.
+                    </p>
+
+                </div>
+
+
+                <!-- FILTROS -->
+
+                <div class="opportunity-filters">
+
+                    <button
+                        type="button"
+                        class="active"
+                        data-opportunity-filter="all"
+                        data-i18n="filterAll"
+                    >
+                        Todos
+                    </button>
+
+                    <button
+                        type="button"
+                        data-opportunity-filter="internship"
+                    >
+                        Internship
+                    </button>
+
+                    <button
+                        type="button"
+                        data-opportunity-filter="freelancer"
+                    >
+                        Freelancer
+                    </button>
+
+                    <button
+                        type="button"
+                        data-opportunity-filter="training"
+                        data-i18n="training"
+                    >
+                        Formación
+                    </button>
+
+                </div>
+
+
+                <div class="opportunities-grid">
+
+                    <article
+                        class="opportunity-card reveal"
+                        data-opportunity="internship"
+                    >
+
+                        <span class="opportunity-number">
+                            01
+                        </span>
+
+                        <h3 data-i18n="internship">
+                            Internship / Junior Crew
+                        </h3>
+
+                        <p data-i18n="internshipText">
+                            Construí experiencia participando
+                            en proyectos audiovisuales.
+                        </p>
+
+                    </article>
+
+
+                    <article
+                        class="opportunity-card reveal"
+                        data-opportunity="freelancer"
+                    >
+
+                        <span class="opportunity-number">
+                            02
+                        </span>
+
+                        <h3 data-i18n="freelancer">
+                            Comunidad de profesionales
+                        </h3>
+
+                        <p data-i18n="freelancerText">
+                            Formá parte de una red de perfiles
+                            técnicos y creativos.
+                        </p>
+
+                    </article>
+
+
+                    <article
+                        class="opportunity-card reveal"
+                        data-opportunity="training"
+                    >
+
+                        <span class="opportunity-number">
+                            03
+                        </span>
+
+                        <h3 data-i18n="training">
+                            Formación
+                        </h3>
+
+                        <p data-i18n="trainingText">
+                            Aprendé con recursos y experiencias
+                            conectadas con la industria.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CREW
+        ================================================== -->
+
+        <section class="crew-section professional-only">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-label">
+                        CREW DIRECTORY
+                    </span>
+
+                    <h2 data-i18n="crewTitle">
+                        Explorá perfiles técnicos
+                    </h2>
+
+                    <p data-i18n="crewSubtitle">
+                        Descubrí las diferentes áreas que forman
+                        parte de una producción audiovisual.
+                    </p>
+
+                </div>
+
+
+                <div class="crew-selector">
+
+                    <button
+                        type="button"
+                        data-crew="camera"
+                    >
+                        Camera
+                    </button>
+
+                    <button
+                        type="button"
+                        data-crew="sound"
+                    >
+                        Sound
+                    </button>
+
+                    <button
+                        type="button"
+                        data-crew="direction"
+                    >
+                        Direction
+                    </button>
+
+                    <button
+                        type="button"
+                        data-crew="art"
+                    >
+                        Art
+                    </button>
+
+                    <button
+                        type="button"
+                        data-crew="lighting"
+                    >
+                        Lighting
+                    </button>
+
+                    <button
+                        type="button"
+                        data-crew="editing"
+                    >
+                        Editing
+                    </button>
+
+                    <button
+                        type="button"
+                        data-crew="production"
+                    >
+                        Production
+                    </button>
+
+                    <button
+                        type="button"
+                        data-crew="other"
+                    >
+                        Other
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="crewOutput"
+                    class="crew-output"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             FORMULARIO TALENTO
+        ================================================== -->
+
+        <section
+            id="participacion"
+            class="talent-form-section professional-only"
+        >
+
+            <div class="container">
+
+                <div class="talent-form-layout">
+
+                    <div class="talent-form-intro">
+
+                        <span class="section-label">
+                            JOIN DELEFOCO
+                        </span>
+
+                        <h2 data-i18n="talentFormTitle">
+                            Quiero formar parte
+                        </h2>
+
+                        <p data-i18n="talentIntro">
+                            Compartí tu información y contanos
+                            en qué área te gustaría participar.
+                        </p>
+
+                    </div>
+
+
+                    <form
+                        id="talentForm"
+                        class="talent-form"
+                        novalidate
+                    >
+
+                        <div class="form-grid">
+
+                            <div class="form-field full">
+
+                                <label for="talentName">
+                                    <span data-i18n="talentName">
+                                        Nombre completo
+                                    </span>
+                                </label>
+
+                                <input
+                                    id="talentName"
+                                    name="name"
+                                    type="text"
+                                    required
+                                    autocomplete="name"
+                                >
+
+                            </div>
+
+
+                            <div class="form-field">
+
+                                <label for="talentEmail">
+                                    <span data-i18n="talentEmail">
+                                        Correo electrónico
+                                    </span>
+                                </label>
+
+                                <input
+                                    id="talentEmail"
+                                    name="email"
+                                    type="email"
+                                    required
+                                    autocomplete="email"
+                                >
+
+                            </div>
+
+
+                            <div class="form-field">
+
+                                <label for="talentRole">
+                                    <span data-i18n="talentRole">
+                                        Área de interés
+                                    </span>
+                                </label>
+
+                                <select
+                                    id="talentRole"
+                                    name="role"
+                                    required
+                                >
+
+                                    <option value="" data-i18n="selectArea">
+                                        Seleccioná un área
+                                    </option>
+
+                                    <option value="Camera">
+                                        Camera
+                                    </option>
+
+                                    <option value="Sound">
+                                        Sound
+                                    </option>
+
+                                    <option value="Direction">
+                                        Direction
+                                    </option>
+
+                                    <option value="Art">
+                                        Art
+                                    </option>
+
+                                    <option value="Lighting">
+                                        Lighting
+                                    </option>
+
+                                    <option value="Editing">
+                                        Editing
+                                    </option>
+
+                                    <option value="Production">
+                                        Production
+                                    </option>
+
+                                    <option value="Other">
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-field full">
+
+                                <label for="talentExperience">
+                                    <span data-i18n="talentExperience">
+                                        Experiencia
+                                    </span>
+                                </label>
+
+                                <textarea
+                                    id="talentExperience"
+                                    name="experience"
+                                    rows="5"
+                                    required
+                                ></textarea>
+
+                            </div>
+
+
+                            <div class="form-field full">
+
+                                <label for="talentMessage">
+                                    <span data-i18n="talentMessage">
+                                        Contanos un poco sobre vos
+                                    </span>
+                                </label>
+
+                                <textarea
+                                    id="talentMessage"
+                                    name="message"
+                                    rows="5"
+                                ></textarea>
+
+                            </div>
+
+                        </div>
+
+
+                        <p
+                            id="talentError"
+                            class="form-message error-message"
+                            aria-live="polite"
+                        ></p>
+
+
+                        <div
+                            id="talentSuccess"
+                            class="form-message success-message"
+                            aria-live="polite"
+                        >
+
+                            <strong data-i18n="talentSuccessTitle">
+                                ¡Perfil listo para enviar!
+                            </strong>
+
+                            <span data-i18n="talentSuccessText">
+                                Se abrirá tu aplicación de correo para completar el envío.
+                            </span>
+
+                            <small class="form-message-note">
+                                <span data-i18n="mailFallback">¿No se abrió tu correo? Escribinos a</span>
+                                <a href="mailto:comunidad@delefoco.com">comunidad@delefoco.com</a>
+                            </small>
+
+                            <small
+                                id="talentMailNote"
+                                class="form-message-note"
+                                hidden
+                            ></small>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary magnetic"
+                            data-i18n="sendProfile"
+                        >
+                            Enviar perfil
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             REFERENCIAS VISUALES
+        ================================================== -->
+
+        <section
+            id="referencias"
+            class="references-section"
+        >
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-label">
+                        VISUAL REFERENCES
+                    </span>
+
+                    <h2 data-i18n="referencesTitle">
+                        Referencias visuales
+                    </h2>
+
+                    <p data-i18n="referencesSubtitle">
+                        Ejemplos de estilos y ambientes para inspirar
+                        una producción.
+                    </p>
+
+                </div>
+
+
+                <div class="references-grid">
+
+                    <!-- Referencia 1 -->
+                    <article class="reference-card">
+                        <div class="reference-image reference-image-one" style="--img: url('https://delefoco.com/Uploads/Productos/14141_66870-med.jpg');">
+                            <a
+                                class="reference-link"
+                                href="https://delefoco.com/?action=p&amp;id=14141"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                <img
+                                    src="https://delefoco.com/Uploads/Productos/14141_66870-med.jpg"
+                                    alt="Cine"
+                                    data-i18n-alt="refCine"
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </a>
+                        </div>
+                        <h3 data-i18n="refCine">Cine</h3>
+                    </article>
+
+                    <!-- Referencia 2 -->
+                    <article class="reference-card">
+                        <div class="reference-image reference-image-two" style="--img: url('https://delefoco.com/Uploads/Productos/14136_67505-med.jpg');">
+                            <a
+                                class="reference-link"
+                                href="https://delefoco.com/?action=p&amp;id=14136"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                <img
+                                    src="https://delefoco.com/Uploads/Productos/14136_67505-med.jpg"
+                                    alt="Estudio"
+                                    data-i18n-alt="refStudio"
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </a>
+                        </div>
+                        <h3 data-i18n="refStudio">Estudio</h3>
+                    </article>
+
+                    <!-- Referencia 3: solo video (sin imagen de celular).
+                         Para cambiar a dónde lleva, edita el href del <a>. -->
+                    <article class="reference-card reference-card--phone">
+                        <div class="reference-image reference-image-three">
+                            <a
+                                class="reference-link"
+                                href="https://delefoco.com/?action=account"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="Producción: abrir en deleFOCO"
+                                data-i18n-aria-label="refOpenPhone"
+                            >
+                                <div class="phone-stage" data-phone-stage>
+                                    <video
+                                        class="phone-video"
+                                        autoplay
+                                        muted
+                                        loop
+                                        playsinline
+                                        preload="metadata"
+                                        aria-hidden="true"
+                                        tabindex="-1"
+                                    >
+                                        <source src="https://delefoco.com/images/form-video2.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </a>
+                        </div>
+                        <h3 data-i18n="refProduction">Producción</h3>
+                    </article>
+
+                    <!-- Referencia 4 -->
+                    <article class="reference-card reference-card--wide">
+                        <div class="reference-image reference-image-four" style="--img: url('https://delefoco.com/Uploads/Productos/14139_67481-med.jpg');">
+                            <a
+                                class="reference-link"
+                                href="https://delefoco.com/?action=p&amp;id=14135"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                <img
+                                    src="https://delefoco.com/Uploads/Productos/14139_67481-med.jpg"
+                                    alt="Equipo"
+                                    data-i18n-alt="refTeam"
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </a>
+                        </div>
+                        <h3 data-i18n="refTeam">Equipo</h3>
+                    </article>
+
+                </div>
+
+
+                <div class="references-more">
+                    <a
+                        href="https://delefoco.com/talleres/"
+                        class="btn btn-primary"
+                        target="_blank"
+                        rel="noopener"
+                        data-i18n="seeMore"
+                    >
+                        Ver más
+                    </a>
+                </div>
+
+
+                <p class="references-note" data-i18n="referencesNote">
+                    Las imágenes mostradas son referencias visuales
+                    y no representan trabajos de deleFOCO.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CONTACTO
+        ================================================== -->
+
+        <section
+            id="contacto"
+            class="contact-section"
+        >
+
+            <div class="container">
+
+                <div class="contact-card reveal">
+
+                    <div>
+
+                        <span class="section-label">
+                            DELEFOCO
+                        </span>
+
+                        <h2 data-i18n="contactTitle">
+                            Hagamos que la producción suceda.
+                        </h2>
+
+                        <p data-i18n="contactText">
+                            Contanos qué necesitás y encontremos
+                            la mejor forma de llevarlo a producción.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-actions">
+
+                        <a
+                            href="#cotizacion"
+                            class="btn btn-primary"
+                            data-action="business-quote"
+                            data-i18n="businessHeroButton"
+                        >
+                            Solicitar cotización
+                        </a>
+
+                        <a
+                            href="https://delefoco.com/"
+                            class="btn btn-secondary"
+                        >
+                            deleFOCO.com
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a
+                    href="https://delefoco.com/"
+                    class="logo"
+                >
+                    <img src="logo_sin_fondo.png" alt="deleFOCO" class="brand-logo footer-logo" loading="lazy" decoding="async" data-fb="img/logo_sin_fondo.png|img/logo.png|https://delefoco.com/uploads/web/logo-delefoco.png" onerror="var f=(this.dataset.fb||'').split('|');var n=f.shift();this.dataset.fb=f.join('|');if(n){this.src=n}else{this.onerror=null}">
+                </a>
+
+                <p data-i18n="footerTagline">
+                    Producción audiovisual y conexión de talento.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#inicio" data-i18n="navHome">
+                    Inicio
+                </a>
+
+                <a href="#servicios" data-i18n="navServices">
+                    Servicios
+                </a>
+
+                <a href="#proceso" data-i18n="navProcess">
+                    Proceso
+                </a>
+
+                <a href="#locaciones" data-i18n="navLocations">
+                    Locaciones
+                </a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#oportunidades" data-i18n="navOpportunities">
+                    Oportunidades
+                </a>
+
+                <a href="#referencias" data-i18n="navReferences">
+                    Referencias
+                </a>
+
+                <a href="#contacto" data-i18n="navContact">
+                    Contacto
+                </a>
+
+                <a href="https://delefoco.com/registrarme/" data-i18n="register">
+                    Registrarme
+                </a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="https://delefoco.com/?action=login" data-i18n="login">
+                    Iniciar sesión
+                </a>
+
+                <a href="https://delefoco.com/escuela/" data-i18n="school">
+                    Escuela
+                </a>
+
+                <a href="https://delefoco.com/planes/" data-i18n="plans">
+                    Planes
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="container footer-bottom">
+
+            <span>
+                © 2026 deleFOCO
+            </span>
+
+            <span>
+                Production / Talent / Ecosystem
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         MODAL DE IMÁGENES
+    ====================================================== -->
+
+    <div
+        id="imageModal"
+        class="image-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Referencia visual ampliada"
+        data-i18n-aria-label="modalImageAlt"
+        aria-hidden="true"
+    >
+
+        <div class="image-modal-content">
+
+            <button
+                id="modalClose"
+                class="modal-close"
+                type="button"
+                aria-label="Cerrar"
+                data-i18n-aria-label="close"
+            >
+                ×
+            </button>
+
+            <img
+                id="modalImage"
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                alt="Referencia visual ampliada"
+            >
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         BOTÓN VOLVER ARRIBA
+    ====================================================== -->
+
+    <button
+        id="backToTop"
+        class="back-to-top"
+        type="button"
+        aria-label="Volver arriba"
+        data-i18n-aria-label="backToTop"
+    >
+        ↑
+    </button>
+
+
+    <!-- =====================================================
+         ESTADO DE CONEXIÓN
+    ====================================================== -->
+
+    <div
+        id="connectionStatus"
+        class="connection-status"
+        role="status"
+        aria-live="polite"
+    >
+        Online
+    </div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
